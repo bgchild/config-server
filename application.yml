@@ -1,0 +1,1162 @@
+﻿﻿﻿﻿﻿﻿﻿﻿info:
+  description: main config file
+
+eureka:
+  instance:
+    preferIpAddress: true
+
+spring.activemq.broker-url: tcp://localhost:8161
+spring.activemq.user: admin
+spring.activemq.password: admin
+spring.activemq.tempUsage: 5000mb
+############################################################################################
+module:
+  test:
+    url1: /test/url1
+    url2: /test/url2
+  activity:
+    homePage: /home/getActList
+  push:
+    push_msg_async: /push/push_msg_async
+    push_msg: /push/push_msg
+  solr:
+    resource:
+      query: /solr/resource/query
+      delete: /solr/resource/delete
+      commit: /solr/resource/commit321
+  statistic:
+    log:
+      user_behavior: /statistic/log/userBehavior
+      common: /statistic/log/common
+      user_message: /statistic/log/userMessage
+      user_learning: /statistic/log/userLearning
+      user_interactive: /statistic/log/userInteractive
+      user_visit: /statistic/log/userVisit
+      user_click: /statistic/log/userClick
+      user_order: /statistic/log/userOrder
+      user_login: /statistic/log/userLogin
+      user_resource: /statistic/log/resourceLog
+      manage_pwd_modify: /statistic/log/managePwdModify
+      userLoginFirst: /statistic/log/getUserFirstLoginTime
+      userLogins: /statistic/log/getUserLoginTimes
+      getNetUserRegisteTime: /statistic/log/getNetUserRegisteTime
+      userLoginsNumber: /statistic/log/getLoginNumber
+      userLoginsTimeNumber: /statistic/log/getLoginTimeNumber
+      integral: /statistic/log/integral
+      user_update: /statistic/log/user_update
+      log_administratorlogin: /statistic/log/adminLogin
+      log_administratoroperation: /statistic/log/adminOperation
+      userRole: /statistic/log/userRole
+      userPlatform: /statistic/log/userPlatform
+      user_third_app_visit: /statistic/log/thirdPartyApp/userVisit
+      user_third_app_click: /statistic/log/thirdPartyApp/userClick
+      user_third_app_learning: /statistic/log/thirdPartyApp/userLearning
+      user_third_app_order: /statistic/log/thirdPartyApp/userOrder
+      user_third_app_behavior: /statistic/log/thirdPartyApp/userBehavior
+      third_click: /log/userClickLog
+      third_video_data_sync: /base/videoDataSync
+      third_batch: /log/userClickLog/batch
+      third_book: /log/object/wrongTopicBook
+      third_synchronousClass: /synchronousClass/logObjectDetailed
+      third_base: /base/messNotice
+      courseVisit: /statistic/log/courseVisit
+      courseVisitLog: /statistic/log/courseVisitLog
+      courseRoom: /statistic/log/courseRoom
+      coursePageHomeVisit: /statistic/log/coursePageHomeVisit
+      courseSignOrCollect: /statistic/log/courseSignOrCollect
+      logLiveRoomOnlineCount: /statistic/log/logLiveRoomOnlineCount
+      logLiveRoomOperate: /statistic/log/logLiveRoomOperate
+      courseViewLog: /statistic/log/courseViewLog
+      coursePackage: /statistic/log/coursePackage
+      basClass: /statistic/log/basClass
+      appUserClickLog: /app/use/appUserClickLog
+      appUserLog: /app/use/appUserLog
+  score:
+      getExamByClass: /hebei/score/getExamByClass
+      getExamByStudent: /hebei/score/getExamByStudent
+      getStudentScoreList: /hebei/score/getStudentScoreList
+      getClassByTeacher: /hebei/score/getClassByTeacher
+      imports: /hebei/score/imports
+      sendScore: /hebei/score/sendScore
+      exportTemplate: /hebei/score/exportTemplate
+      getTeacherScoreList: /hebei/score/getTeacherScoreList
+      getStudentScoreDetail: /hebei/score/getStudentScoreDetail
+      getScoreListByExamAndParent: /hebei/score/getScoreListByExamAndParent
+      getParentScoreList: /hebei/score/getParentScoreList
+      getScoreListByExam: /hebei/score/getScoreListByExam
+      exPortScoreListByExam: /hebei/score/exPortScoreListByExam
+  xxt:
+    api:
+      register: /register/show
+      changePwd: /xxt/change/password
+      login: /xxt/login
+      accountdetail: /xxt/accountdetail
+      jump: /xxt/login
+      classInfo: /xxt/classInfo
+      parentInfo: /xxt/parentInfo
+      childInfo: /xxt/childInfo
+      jumpto:
+      #4鍜屾暀鑲蹭簯骞冲彴璺宠浆鏍¤閫氭帴鍙�
+        jumptoxxt: /xxt/jump/jumptoxxt
+      #25鍜屾暀鑲插鎺ョ渷瀹㈡埛绔帴鍙�
+        jumpAppProduct: /xxt/jump/jumpAppProduct
+      #24鍜屾暀鑲蹭簯骞冲彴璺宠浆鏍¤閫氫骇鍝佹帴鍙�
+        product: /xxt/jump/product
+      user:
+      #3鏍¤閫氳幏鍙栫彮绾т腑瀛︾敓涓庡闀夸俊鎭帴鍙�
+        student_parent: /xxt/class/student_parent
+      #2鏍¤閫氱敤鎴疯缁嗕俊鎭幏鍙栨帴鍙�
+        user_detail: /xxt/user/user_detail
+      #19 浜у搧鍖呮湀璁㈣喘銆佸寘鏈堥�璁€�鐐规挱鎺ュ彛
+        group: /xxt/order/group
+      #18 鐢ㄦ埛瀵嗙爜鍚屾鎺ュ彛
+        password: /xxt/sync/password
+      XxtClassParentStudentInfo: /xxt/classParentStudentInfo
+      XxtClassTeacherInfo: /xxt/classTeacherInfo
+
+    public:
+      sync:
+        user: /xxtapi/sync/user
+        user_class: /xxtapi/sync/user_class
+        user_relationship: /xxtapi/sync/user_relationship
+        class: /xxtapi/sync/class
+        school: /xxtapi/sync/school
+        password: /xxtapi/sync/password
+        group: /xxtapi/sync/order/group
+        user_order: /xxtapi/sync/order/user_order
+      jump:
+        jump: /xxtapi/jump
+        eduproduct: /xxtapi/jump/eduproduct
+        token: /xxtapi/login_token
+
+  message:
+    send: /message/sendMessage
+    outboxQuery: /message/outboxQuery
+    inboxQuery: /message/inboxQuery
+    draftsQuery: /message/draftsQuery
+    delete: /message/deleteMessage
+    updateReadFlag: /message/updateReadFlag
+    getInboxList: /message/getInboxList
+    getInboxAllList: /message/getInboxAllList
+    getSmsStatusCount: /message/getSmsStatusCount
+
+  basic:
+    basic:
+      editkey: /basic/editKey
+      querylist: /basic/queryList
+      sendvalidcode: /basic/sendvalidcode
+      sendMessage: /basic/sendMessage
+    resource:
+      saveOrCancelFav: /resource/saveOrCancelFav
+      queryFavListByUserId: /resource/queryFavListByUserId
+      getCommentFirstListById: /resource/getCommentFirstListById
+      getCommentsByPackageId: /resource/getCommentsByPackageId
+      setUserComment: /resource/setUserComment
+      setUserCommentGrade: /resource/setUserCommentGrade
+      updatePageView: /resource/updatePageView
+      updateDownloadVolume: /resource/updateDownloadVolume
+      queryExistResource: /resource/queryExistResource
+  resource:
+    course:
+      getBrandList: /course/getBrandList
+      getBrandLableList: /course/getBrandLableList
+      getBrandDetail: /course/getBrandDetail
+      getCourseDetail: /course/getCourseDetail
+      getCourseList: /course/getCourseList
+      getCourseRelation: /course/getCourseRelation
+      play: /course/play
+      getCourseH5Info: /course/getCourseH5Info
+      getCourseListByBrandId: /course/getCourseListByBrandId
+      getCourseListByLables: /course/getCourseListByLables
+      getCourseListByBrandIds: /course/getCourseListByBrandIds
+      getBrandIdByCourseId: /course/getBrandIdByCourseId
+      getCourses: /course/getCourses
+      getCourseListByColumnId: /course/getCourseListByColumnId
+      getCourseProjectByZoneId: /course/getCourseProjectByZoneId
+      getCourseListByCourseId: /course/getCourseListByCourseId
+      getCarouselList: /course/getCarouselList
+      getCourseRecommendByCourseid: /course/getCourseRecommendByCourseid
+      queryTeacherAndCourseByCourseid: /course/queryTeacherAndCourseByCourseid
+      queryCourseOrderByLables: /course/queryCourseOrderByLables
+      getZoneColumnById: /course/getZoneColumnById
+      getExerciseResourcesById: /course/getExerciseResourcesById
+      getSubjectListBycolumnId: /course/getSubjectListBycolumnId
+      getColumnListById: /course/getColumnListById
+      getColumnLablesById: /course/getColumnLablesById
+      getCoursesById: /course/getCoursesById
+      getCourseDetailById: /course/getCourseDetailById
+      getCatalogLessonList: /course/getCatalogLessonList
+      getLessonDetailById: /course/getLessonDetailById
+      getMsListByLableId: /course/getMsListByLableId
+      getMsDetailByMsId: /course/getMsDetailByMsId
+      modifyUserRecord: /course/modifyUserRecord
+      getUserRecordList: /course/getUserRecordList
+      getAuditionLessonList: /course/getAuditionLessonList
+    resource:
+      getResourceDetail: /resource/getResourceDetail
+      getTestResourceDetail: /resource/getTestResourceDetail
+      searchResources: /resource/searchResources
+      resourceStatistics: /resource/resourceStatistics
+      searchResourceList: /resource/searchResourceList
+      getResourceList: /resource/getResourceList
+      getH5ResourceDetail: /resource/getH5ResourceDetail
+      getResources: /resource/getResources
+      getResourceCount: /resource/getResourceCount
+      zyIndex: /resource/zyIndex
+      getRelatedResources: /resource/getRelatedResources
+      getHistoryResources: /resource/getHistoryResources
+      recommendResource: /resource/recommendResource
+      getResourcesNo: /resource/getResourcesNo
+      getGuessResources: /resource/getGuessResources
+      getSortResources: /resource/getSortResources
+      getHotResources: /resource/getHotResources
+      getHotResourcesByDetail: /resource/getHotResourcesByDetail
+      search: /resource/search
+      getTeacherChapterByLables: /resource/getTeacherChapterByLables
+      getResourceLisrByChapterId: /resource/getResourceLisrByChapterId
+      searchWkResource: /resource/searchWkResource
+    basic:
+      setUserCommentGrade: /basic/setUserCommentGrade
+      getCommentsByPackageId: /basic/getCommentsByPackageId
+      saveOrCancelFav: /basic/saveOrCancelFav
+      saveLike: /basic/saveLike
+      queryFavListByUserId: /basic/queryFavListByUserId
+      getChapterByLables: /basic/getChapterByLables
+      getUserCommentListWithPage: /basic/getUserCommentListWithPage
+      getKnowtreeByPhaseidAndSubjectid: /basic/getKnowtreeByPhaseidAndSubjectid
+      addUserNews: /basic/addUserNews
+      addUserComment: /basic/addUserComment
+      getLables: /basic/getLables
+      getResourceCountByUser: /basic/getResourceCountByUser
+      getLableResRelList: /basic/getLableResRelList
+      getBookByLables: /basic/getBookByLables
+      getNewLables: /basic/getNewLables
+    question:
+      getProblemTypeListByLableId: /question/getProblemTypeListByLableId
+      getPaperProblemByLable: /question/getPaperProblemByLable
+      findPaperProblemById: /question/findPaperProblemById
+      findPaperProblemByKnowcode: /question/findPaperProblemByKnowcode
+      modTestNum: /question/modTestNum
+      findPaperProblemByCondition: /question/findPaperProblemByCondition
+      findPaperProblemByFiveLables: /question/findPaperProblemByFiveLables
+      findPaperProblemByConditionZhineng: /question/findPaperProblemByConditionZhineng
+      getLableListByTypeAndProblem: /question/getLableListByTypeAndProblem
+      getLableByLableId: /question/getLableByLableId
+      getSubjectGradeList: /question/getSubjectGradeList
+      getKnowtreeByLables: /question/getKnowtreeByLables
+      getChapterTreeByLables: /question/getChapterTreeByLables
+      getProblemsByKnowledges: /question/getProblemsByKnowledges
+      getProblemsByChapters: /question/getProblemsByChapters
+      getSimpleProblemByIdAndTeacher: /question/getSimpleProblemByIdAndTeacher
+      getSimpleProblemByIdAndStudent: /question/getSimpleProblemByIdAndStudent
+      getStudyKnowCodeList: /question/getStudyKnowCodeList
+      getChapterIdsList: /question/getChapterIdsList
+    openapi:
+      add: /openapi/resource/add
+      getCommentList: /openapi/resource/getCommentList
+      grade: /openapi/resource/grade
+      getResource: /openapi/resource/getResource
+      getRecommendResources: /openapi/resource/getRecommendResources
+      getResourceListBySolr: /openapi/resource/getResourceListBySolr
+      getCatalogueList: /openapi/resource/getCatalogueList
+      getResourceList: /openapi/resource/getResourceList
+      upload: /openapi/resource/upload
+      getResourceRecommend: /openapi/resource/getResourceRecommend
+      getPaperCountBylables: /openapi/resource/getPaperCountBylables
+      getDesignResources: /openapi/resource/getDesignResources
+      getPaperResourceLable: /openapi/resource/getPaperResourceLable
+      getResourceListByLable: /openapi/resource/getResourceListByLable
+      findResourceDetail: /openapi/resource/findResourceDetail
+      getResourceListBySubjectAndProvince: /openapi/resource/getResourceListBySubjectAndProvince
+      getResourcesTotal: /openapi/resource/getResourcesTotal
+      searchSchoolResources: /openapi/resource/searchSchoolResources
+      searchSchoolResourcesDeail: /openapi/resource/searchSchoolResourcesDeail
+    experiment:
+      getLableList: /experiment/getLableList
+      getChapterList: /experiment/getChapterList
+      searchCourseList: /experiment/searchCourseList
+      getCourseDetail: /experiment/getCourseDetail
+    intelligentsearch:
+      commonSearch: /resource/commonSearch
+      intelligentPrompt: /resource/intelligentPrompt
+      newCommonSearch: /resource/newCommonSearch
+      newIntelligentPrompt: /resource/newIntelligentPrompt
+    coop:
+      qualification:
+        addQualificationInfo: /coop/qualification/addQualificationInfo
+        quaInfo: /coop/qualification/quaInfo
+        modifyQualificationInfo: /coop/qualification/modifyQualificationInfo
+      contract:
+        contractIndex: /coop/contract/contractIndex
+        getContractList: /coop/contract/getContractList
+        getContractDetail: /coop/contract/getContractDetail
+        addContract: /coop/contract/addContract
+        updateContract: /coop/contract/updateContract
+      resourceSample:
+        toUploadFtp: /coop/resourceSample/toUploadFtp
+        getContractList: /coop/resourceSample/getContractList
+        getResourceTypeList: /coop/resourceSample/getResourceTypeList
+        upload: /coop/resourceSample/upload
+        getSampleTypeList: /coop/resourceSample/getSampleTypeList
+        getResourceSampleAuditPassResult: /coop/resourceSample/getResourceSampleAuditPassResult
+      resource:
+        getContractList: /coop/resource/getContractList
+        getStatusList: /coop/resource/getStatusList
+        modifyResources: /coop/resource/modifyResources
+        getBatchList: /coop/resource/getBatchList
+        getResourceList: /coop/resource/getResourceList
+        getResourceById: /coop/resource/getResourceById
+        batchAudit: /coop/resource/batchAudit
+        batchDelete: /coop/resource/batchDelete
+        resourceUpdate: /coop/resource/resourceUpdate
+        getAuditDesc: /coop/resource/getAuditDesc
+        download: /coop/resource/download
+    power:
+      notifyTranscode: /resource/notifyTranscode
+    api:
+      course:
+        getProvinceList: /api/course/getProvinceList
+        getCityList: /api/course/getCityList
+        getDistrictList: /api/course/getDistrictList
+        getLabelList: /api/course/getLabelList
+        getCourseList: /api/course/getCourseList
+        getCourseDetail: /api/course/getCourseDetail
+        preview: /api/course/preview
+    search:
+      add: /edu/search/add
+      update: /edu/search/update
+      delete: /edu/search/delete
+      search: /edu/search
+  mas:
+    message:
+      send: /mas/message/send
+    downlink:
+      smsg: /mas/downlink/smsg
+      newsmsg: /mas/downlink/smsg/v2
+      tsmsg: /mas/downlink/tsmsg
+      newtsmsg: /mas/downlink/tsmsg/v2
+      sendSTMS: /mas/downlink/sendSTMS
+  product:
+    product:
+      getProductList: /product/getProductList
+      getProductDetail: /product/getProductDetail
+      getProductStatistics: /product/getProductStatistics
+      getApplOfFriendsUse: /product/getApplOfFriendsUse
+      getAppListByUserId: /product/getAppListByUserId
+      getGroupIdAndTerminalType: /product/getGroupIdAndTerminalType
+      getAllProductList: /product/getAllProductList
+      getAllProductInfoList: /product/getAllProductInfoList
+      getProductBillAndStateList: /product/getProductBillAndStateList
+      getActivityProductList: /product/getActivityProductList
+      getProductInfoList: /product/getProductInfoList
+      getSubGroupBillInfo: /product/getSubGroupBillInfo
+      getProductInfoByClientId: /product/getProductInfoByClientId
+      getGkwzState: /various/getGkwzState
+    specialArea:
+      getProvByDn: /specialArea/getProvByDn
+      getAreaApplist: /specialArea/getAreaApplist
+      getOrderState: /specialArea/getOrderState
+    proApi:
+      appCenterList: /proApi/appCenterList
+      appInfo: /proApi/appInfo
+      similarityAppList: /proApi/similarityAppList
+      myApp: /proApi/myApp
+      globalSearchApp: /proApi/globalSearchApp
+      updateAppLookCount: /proApi/updateAppLookCount
+      findAllAppList: /proApi/findAllAppList
+    proBilling:
+      unifiedPay: /proBilling/unifiedPay
+      queryFuncState: /proBilling/queryFuncState
+      queryUserOrder: /proBilling/queryUserOrder
+      queryAppTcList: /proBilling/queryAppTcList
+    proOrder:
+      orderUser: /proOrder/orderUser
+      cancelOrder: /proOrder/cancelOrder
+    coop:
+      addApp: /product/addApp
+      modifyApp: /product/modifyApp
+      getAppList: /product/getAppList
+      getGroupSubList: /product/getGroupSubList
+      appModifyView: /product/appModifyView
+      download: /product/download
+      imgDownload: /product/imgDownload
+    api:
+      appCenterList: /api/appCenterList
+      appInfo: /api/appInfo
+      similarityAppList: /api/similarityAppList
+      recommendApps: /api/recommendApps
+      myApp: /api/myApp
+    cms:
+      getList: /proAppSort/getList
+      appRecommendOnline: /proAppSort/appRecommendOnline
+      sortUpdate: /proAppSort/sortUpdate
+      delete: /proAppSort/delete
+      save: /proAppSort/save
+  vpaas:
+    video:
+      upload: /vpaas/video_upload
+      delete: /vpaas/video_delete
+      publish: /vpaas/video_get_publish_info
+      getAttr: /vpaas/video_get_attr
+      setAttr: /vpaas/video_set_attr
+      getList: /vpaas/video_get_list
+      downUrl: /vpaas/video_get_download_raw_uri
+      downTarUrl: /vpaas/video_get_download_tar_uri
+  user:
+    activity:
+      activatePresentCard: /activity/presentCard/activatePresentCard
+      activatedPresentCards: /activity/presentCard/activatedPresentCards
+    book:
+      getBookArea: /book/getBookArea
+      getGrade: /book/getGrade
+      getUserBookSetting: /book/getUserBookSetting
+      getsubVer: /book/getsubVer
+      addUserBookSetting: /book/addUserBookSetting
+      getSubjectList: /book/getSubjectList
+      getGradeList: /book/getGradeList
+      getSubjectListByGradeId: /book/getSubjectListByGradeId
+      jiemi: /book/jiemi
+      qhc: /book/qhc
+    friend:
+      getPageOfUser: /friend/getPageOfUser
+      addFriend: /friend/addFriend
+      getEachOtherFriends: /friend/getEachOtherFriends
+      getFriendInfoByUserId: /friend/getFriendInfoByUserId
+      selectFriendsListByUserId: /friend/selectFriendsListByUserId
+      getAllFriendsListByUserId: /friend/getAllFriendsListByUserId
+      getFriendListByUserId: /friend/getFriendListByUserId
+      getMayKnowList: /friend/getMayKnowList
+      getGroupOfUser: /friend/getGroupOfUser
+      modGroupOfUser: /friend/modGroupOfUser
+      modUserInGroup: /friend/modUserInGroup
+      modUsersInGroup: /friend/modUsersInGroup
+      delGroupOfUser: /friend/delGroupOfUser
+      getFriendsListByUserId: /friend/getFriendsListByUserId
+      modRemarkname: /friend/modRemarkname
+    org:
+      getSchools: /org/getSchools
+      getUnfriendsBySchool: /org/getUnfriendsBySchool
+      getClass: /org/getClass
+      getClassUserInfo: /org/getClassUserInfo
+      getClassUser: /org/getClassUser
+      getProvinces: /org/getProvinces
+      getUserRela: /org/getUserRela
+      getClassInfo: /org/getClassInfo
+      getTeachersByUserId: /org/getTeachersByUserId
+      getUserInfo: /org/getUserInfo
+      getAreaList: /org/getAreaList
+      getCityList: /org/getCityList
+      modClassUserNickName: /org/modClassUserNickName
+      modClassIntroduce: /org/modClassIntroduce
+      orguimage: /org/uploadimage
+      getPhone: /org/getPhone
+      getClassMsgInfo: /org/getClassMsgInfo
+    user:
+      modPwd: /user/modPwd
+      resetPwd: /user/resetPwd
+      modUserInfo: /user/modUserInfo
+      getUserByPhone: /user/getUserByPhone
+      getUserByUserId: /user/getUserByUserId
+      getUserByUserIds: /user/getUserByUserIds
+      modUserPhone: /user/modUserPhone
+      fristPhotoupload: /user/fristPhotoupload
+      head: /user/head
+      getSimpleUser: /user/getSimpleUser
+      getFullUser: /user/getFullUser
+      getGroupUserById: /user/getGroupUserById
+      isExistence: /user/isExistence
+      register: /user/register
+      forgetPwd: /user/forgetPassword
+      modPassword: /user/modPassword
+      resetPassword: /user/resetPassword
+      login: /user/login
+      xxtLogin: /user/xxtLogin
+      toXxtUrl: /user/toXxtUrl
+      getRole: /user/getRole
+      getPlatformByPhone: /user/getPlatformByPhone
+      getToken: /user/getToken
+      alterRole: /user/alterRole
+      filtercontent: /user/filtercontent
+      replaceContent: /user/replaceContent
+      findPhoneByUserId: /user/findPhoneByUserId
+      judgePhone: /user/judgePhone
+      smsLogin: /user/smsLogin
+      getPlatformByAccount: /user/getPlatformByAccount
+      advanceJump: /user/advanceJump
+      queryPlatformList: /user/queryPlatformList
+      memkeycode : /web/memkeycode
+      memkeyaccesstoken : /web/memkeyaccesstoken
+      querybindunionId : /user/querybindunionId
+      binduser: /user/binduser
+      querythreeuser: /user/querythreeuser
+      unbundlinguser: /user/unbundlinguser
+      queryaccount: /user/queryaccount
+      existuserlogin: /user/existuserlogin
+      getRolePhone: /user/getRolePhone
+      getStudentPhones: /user/getStudentPhones
+      smsSignIn: /user/smsSignIn
+      judgeLocalXxt: /user/judgeLocalXxt
+      registerAu: /user/registerAu
+      userInfoUnique: /user/userInfoUnique
+      loginAu: /user/loginAu
+      userPromote: /user/userPromote
+      modPwdAu: /user/modPwdAu
+      smsSend: /user/smsSend
+      getAssersionAndUserInfo: /user/getAssersionAndUserInfo
+      cmccSmsLogin: /user/cmccSmsLogin
+      getCardNumberByUserId: /user/getCardNumberByUserId
+      getPlatformUserIdsByPhone: /user/getPlatformUserIdsByPhone
+      getClassesBySchoolId: /user/getClassesBySchoolId
+      getAccountListByPhone: /user/getAccountListByPhone
+      switchAccountIn: /user/switchAccountCheck
+      simToken: /user/simTokenCheck
+      xxtLoginSimple: /user/xxtLoginSimple
+      addUserRelation: /user/addUserRelation
+      smsLoginSimple: /user/smsLoginSimple
+      simLoginSimple: /user/simLoginSimple
+      getRoleAccount: /user/getRoleAccount
+      switchAccountRoleCheck: /user/switchAccountRoleCheck
+      getVerificationCode: /user/getVerificationCode
+      queryPhones: /user/queryPhones/i
+      collectPhone: /equity/collectPhone
+      userGetUserIds: /user/getUserIds
+    group:
+      addgroup: /group/addGroup
+      editgroup: /group/editGroup
+      delgroup: /group/delGroup
+      getgroup: /group/getGroup
+      addgroupuser: /group/addGroupUser
+      delgroupuser: /group/delGroupUser
+      getgroupmembers: /group/getGroupMembers
+      uploadimage: /group/uploadimage
+      modGroupUserNickName: /group/modGroupUserNickName
+      getGroupInfo: /group/getGroupInfo
+    credit:
+      modCredit: /credit/modCredit
+      getCreditDetailsList: /credit/getCreditDetailsList
+    all:
+      user:
+        userBindPhone: /all/user/userBindPhone
+        getRoleAccount: /all/user/getRoleAccount
+        getRolePhone: /all/user/getRolePhone
+        userNicknameUpdate: /all/user/userNicknameUpdate
+        fristPhotoupload: /all/user/fristPhotoupload
+        judgeLocalXxt: /all/user/judgeLocalXxt
+        queryUserByUserId: /all/user/queryUserByUserId
+        queryUserByPhone: /all/user/queryUserByPhone
+        forgetPwd: /all/user/forgetPassword
+        changePwd: /all/user/changePassword
+        register: /all/user/register
+        queryUserPanelInfoByUserId: /all/user/queryUserPanelInfoByUserId
+        userLableList: /all/user/userLableList
+        userUpdateLable: /all/user/userUpdateLable
+        checkPhone: /all/user/checkPhone
+      friend:
+        remark: /all/friend/remark
+        checkRelationship: /all/friend/checkRelationship
+        addFriend: /all/friend/addFriend
+      org:
+        provinceList: /all/org/provinceList
+        gradeList: /all/org/gradeList
+        userClassList: /all/org/userClassList
+        classUserList: /all/org/classUserList
+        classNoticeUpdate: /all/org/classNoticeUpdate
+        userClassNicknameUpdate: /all/org/userClassNicknameUpdate
+        classInfo: /all/org/classInfo
+        classHeadUpdate: /all/org/classHeadUpdate
+    fusion:
+      user:
+        getChildLimit: /fusion/user/getChildLimit
+        bindKids: /fusion/user/bindKids
+        saveChild: /fusion/user/saveChild
+        delChild: /fusion/user/delChild
+        joinClass: /fusion/user/joinClass
+        waitAuditList: /fusion/user/waitAuditList
+        waitAuditDetail: /fusion/user/waitAuditDetail
+        auditJoinClass: /fusion/user/auditJoinClass
+        auditRemoveClass: /fusion/user/auditRemoveClass
+        addStudentAndParent: /fusion/user/addStudentAndParent
+        updateStudentAndParent: /fusion/user/updateStudentAndParent
+        queryStudentAndParent: /fusion/user/queryStudentAndParent
+        queryClass: /fusion/user/queryClass
+        applyParent: /fusion/user/applyParent
+      org:
+        getAreaList: /fusion/org/getAreaList
+        getOrgList: /fusion/org/getOrgList
+    hebei:
+      usermanage:
+        findClassList: /hebei/usermanage/findClassList
+        addClass: /hebei/usermanage/addClass
+        editClass: /hebei/usermanage/editClass
+        delClass: /hebei/usermanage/delClass
+        findOrgList: /hebei/usermanage/findOrgList
+        findGradeList: /hebei/usermanage/findGradeList
+        findGradeTypeList: /hebei/usermanage/findGradeTypeList
+        addGrade: /hebei/usermanage/addGrade
+        delGrade: /hebei/usermanage/delGrade
+        findStudentList: /hebei/usermanage/findStudentList
+        changeClass: /hebei/usermanage/changeClass
+        findTeacherList: /hebei/usermanage/findTeacherList
+        addTeacher: /hebei/usermanage/addTeacher
+        editTeacher: /hebei/usermanage/editTeacher
+        delTeacher: /hebei/usermanage/delTeacher
+        findTeaJobList: /hebei/usermanage/findTeaJobList
+        findJobList: /hebei/usermanage/findJobList
+        delTeacherJob: /hebei/usermanage/delTeacherJob
+        addTeaJob: /hebei/usermanage/addTeaJob
+        findAuditParList: /hebei/usermanage/findAuditParList
+        applyJoinClass: /hebei/usermanage/applyJoinClass
+        auditClass: /hebei/usermanage/auditClass
+        removeFromClass: /hebei/usermanage/removeFromClass
+        findMyClassRoom: /hebei/usermanage/findMyClassRoom
+        findMyStuClass: /hebei/usermanage/findMyStuClass
+        findAllMyStuClass: /hebei/usermanage/findAllMyStuClass
+        getUserRoleInfo: /hebei/usermanage/getUserRoleInfo
+        getShcoolList: /hebei/usermanage/getSchoolList
+        getSubjectList: /hebei/usermanage/getSubjectList
+        getMyGradeList: /hebei/usermanage/getMyGradeList
+        getSchoolRole: /hebei/usermanage/getSchoolRole
+        getAttendanceInfoByTimeCardNo: /hebei/usermanage/getAttendanceInfoByTimeCardNo
+        getTeacherRelationInfo: /hebei/usermanage/getTeacherRelationInfo
+        getSchoolGradeClassInfo: /hebei/usermanage/getSchoolGradeClassInfo
+    netschool:
+      batchUserImport: /netschool/batchUserImport
+    three:
+      sendMessage: /third/sendMessage/i
+      updateUserInfo: /third/updateUserInfo/i
+  order:
+    order:
+      createOrder: /order/createOrder
+      bindPhone: /order/bindPhone
+      submitOrders: /order/submitOrders
+      selectOrderState: /order/selectOrderState
+      getUserPermissions: /order/getUserPermissions
+      selectOrderList: /order/selectOrderList
+      unsubscribe: /order/unsubscribe
+      iscanforfree: /order/iscanforfree
+      getUserOrderItems: /order/getUserOrderItems
+  onest:
+    object:
+      create: /onest/object_create
+      list: /onest/object_list
+      delete: /onest/object_delete
+      metadata: /onest/object_metadata
+      openUrl: /onest/object_openurl
+      getObject: /onest/object_get
+    bucket:
+      create: /onest/bucket_create
+      list: /onest/bucket_list
+      delete: /onest/bucket_delete
+  oauth:
+    openapi:
+      send: /openapi/message/send
+      log: /openapi/log
+      templateSend: /openapi/message/templateSend
+    payment:
+      groupBillingInfos: /openapi/payment/groupBillingInfos
+      paystate: /openapi/payment/paystate
+      productstate: /openapi/payment/productstate
+      getReneWal: /openapi/payment/getReneWal
+      probation: /openapi/payment/probation
+      order: /openapi/payment/generate/order
+      purchase: /openapi/payment/remind/purchase
+      getTime: /openapi/payment/getTime
+      updateFreeTime: /openapi/payment/updateFreeTime
+    resource:
+      add: /openapi/resource/add
+      getCatalogueList: /openapi/resource/getCatalogueList
+      setUserShare: /openapi/resource/setUserShare
+      getResource: /openapi/resource/getResource
+      getRecommend: /openapi/resource/getRecommend
+      grade: /openapi/resource/grade
+      getCommentList: /openapi/resource/getCommentList
+      upload: /openapi/resource/upload
+      getResourceList: /openapi/resource/getResourceList
+      shareToPersonalSpace: /openapi/resource/shareToPersonalSpace
+      getGradeList: /openapi/resource/getGradeList
+      getCourseDetail: /openapi/resource/getCourseDetail
+      getSubjectList: /openapi/resource/getSubjectList
+      getAllFriendsListByUserId: /openapi/resource/getAllFriendsListByUserId
+      getUserBookSetting: /openapi/resource/getUserBookSetting
+      getResourceDetail: /openapi/resource/getResourceDetail
+      getCourseList: /openapi/resource/getCourseList
+      getCourseRecommendByCourseid: /openapi/resource/getCourseRecommendByCourseid
+      getCourseListByLables: /openapi/resource/getCourseListByLables
+      getBrandIdByCourseId: /openapi/resource/getBrandIdByCourseId
+      getSubjectListBycolumnId: /openapi/resource/getSubjectListBycolumnId
+      addUserComment: /openapi/resource/addUserComment
+      getUserCommentListWithPage: /openapi/resource/getUserCommentListWithPage
+      saveOrCancelFav: /openapi/resource/saveOrCancelFav
+      getBrandLableList: /openapi/resource/getBrandLableList
+      getSubjectListByGradeId: /openapi/resource/getSubjectListByGradeId
+      queryCourseOrderByLables: /openapi/resource/queryCourseOrderByLables
+      getChapterByLables: /openapi/resource/getChapterByLables
+      getKnowtreeByPhaseidAndSubjectid: /openapi/resource/getKnowtreeByPhaseidAndSubjectid
+      getLables: /openapi/resource/getLables
+      searchResourceList: /openapi/resource/searchResourceList
+      getCourseProjectByZoneId: /openapi/resource/getCourseProjectByZoneId
+      getUserByUserIds: /openapi/resource/getUserByUserIds
+      getZoneColumnById: /openapi/resource/getZoneColumnById
+      queryTeacherAndCourseByCourseid: /openapi/resource/queryTeacherAndCourseByCourseid
+      updatePageView: /openapi/resource/updatePageView
+      getExerciseResourcesById: /openapi/resource/getExerciseResourcesById
+      getBrandDetail: /openapi/resource/getBrandDetail
+      setUserCommentGrade: /openapi/resource/setUserCommentGrade
+      getCommentsByPackageId: /openapi/resource/getCommentsByPackageId
+      getCourseListByCourseId: /openapi/resource/getCourseListByCourseId
+      getClassUserInfo: /openapi/resource/getClassUserInfo
+      getClassUser: /openapi/resource/getClassUser
+      getsubVer: /openapi/resource/getsubVer
+      getBookByLables: /openapi/resource/getBookByLables
+      getAreaList: /openapi/resource/getAreaList
+      getPaperCountBylables: /openapi/resource/getPaperCountBylables
+      getResourceRecommendOpenapi: /openapi/resource/getResourceRecommendOpenapi
+      getDesignResources: /openapi/resource/getDesignResources
+      searchResources: /openapi/resource/searchResources
+      getPaperProblemByLable: /openapi/question/getPaperProblemByLable
+      findPaperProblemByConditionZhineng: /openapi/question/findPaperProblemByConditionZhineng
+      getPaperResourceLable: /openapi/resource/getPaperResourceLable
+      getResourceListByLable: /openapi/resource/getResourceListByLable
+      findResourceDetail: /openapi/resource/findResourceDetail
+      getResourceListBySubjectAndProvince: /openapi/resource/getResourceListBySubjectAndProvince
+      getLableByLableId: /openapi/resource/getLableByLableId
+      getSubjectGradeList: /openapi/resource/getSubjectGradeList
+      getKnowtreeByLables: /openapi/resource/getKnowtreeByLables
+      getChapterTreeByLables: /openapi/resource/getChapterTreeByLables
+      getProblemsByKnowledges: /openapi/resource/getProblemsByKnowledges
+      getProblemsByChapters: /openapi/resource/getProblemsByChapters
+      getSimpleProblemByIdAndTeacher: /openapi/resource/getSimpleProblemByIdAndTeacher
+      getSimpleProblemByIdAndStudent: /openapi/resource/getSimpleProblemByIdAndStudent
+      getTeacherChapterByLables: /openapi/resource/getTeacherChapterByLables
+      getResourceLisrByChapterId: /openapi/resource/getResourceLisrByChapterId
+
+    base:
+      current_role: /openapi/base/user/current_role
+      user_info: /openapi/base/user/user_info
+      teacher_info: /openapi/base/user/teacher_info
+      parent_info: /openapi/base/user/parent_info
+      student_info: /openapi/base/user/student_info
+      school_info: /openapi/base/school_info
+      group_info: /openapi/base/user/group_info
+      group_user_info: /openapi/base/user/group_user_info
+    user:
+      province: /openapi/user/province
+      web_user_info: /openapi/user/web_user_info
+      user_info: /openapi/user/user_info
+      teacher_info: /openapi/user/teacher_info
+      parent_info: /openapi/user/parent_info
+      student_info: /openapi/user/student_info
+
+  boss:
+    synData: /boss/synData
+    prodPublish: /boss/publishProducts
+    cdr: /boss/cdrTask
+    getErrorCallDetailRecord: /boss/getErrorCallDetailRecord
+
+  credit:
+    handler: /credit/handler
+  security-private:
+    pre: /security/pre
+    post: /security/post
+    refresh: /security/refresh
+  payment:
+    hy:
+      order: /hy/order/group
+      syn: /syn/order/group
+      orderpage: /hy/paymentPage
+      orderquery: /hy/queryUserOrderRelation
+      payture: /hy/payture
+      paramsasc: /hy/paramsasc
+      syscustomer: /hy/syscustomer
+      monthlyOrder: /hy/monthlyOrder
+    third:
+      asyn: /asy/notice
+    product:
+      productsyn: /cmcc/productSyn
+      hyProductGenerate: /cmcc/hyProductGenerate
+      hycodegeneration: /cmcc/hycodegeneration
+      hyGroupBillGenerate: /cmcc/hyGroupBillGenerate
+      hyGroupGenerate: /cmcc/hyGroupGenerate
+  sso:
+    destory: /destory
+  basem:
+    userList: /basem/userList
+    managerList: /basem/managerList
+    researcherList: /basem/researcherList
+    secondAuditorList: /basem/secondAuditorList
+    auditStateList: /basem/auditStateList
+    courseSubmit: /basem/courseSubmit
+    getRolesByUserId: /basem/getRolesByUserId
+    getUsersByRoleId: /basem/getUsersByRoleId
+    getOrgDepartmentList: /basem/getOrgDepartmentList
+    getOrgByUserId: /basem/getOrgByUserId
+  notice:
+    noticeReceive: /notice/noticeReceive
+
+  integral:
+    integral:
+      addIntegration: /addIntegration
+      consumeIntegration: /consumeIntegration
+      userIntegrationInfo: /userIntegrationInfo
+      getIntegrationRole: /getIntegrationRole
+    goods:
+      getIntegralGoodsByPlatformId: /getIntegralGoodsByPlatformId
+      getIntegralGoodsDetailsById: /getIntegralGoodsDetailsById
+      getIntegralGoodsExchangeByUserIdAndAccount: /getIntegralGoodsExchangeByUserIdAndAccount
+      getUserIntegralByUserIdAndAccount: /getUserIntegralByUserIdAndAccount
+  edubaby:
+    hbbapi:
+      syncuser: /hbbapi/sync_user
+      syncschool: /hbbapi/school
+      syncclass: /hbbapi/class
+      syncuserclass: /hbbapi/user_class
+      syncuserrelationship: /hbbapi/user_relationship
+      batchorder: /hbbapi/batchorder
+      querybatchserail: /hbbapi/querybatchserail
+      forgetPwd: /hbbapi/user/forgetPassword
+      getUserByPhone: /hbbapi/user/getUserByPhone
+      getUserByUserId: /hbbapi/user/getUserByUserId
+      batchordermsg: /hbbapi/batchordermsg
+      getPrincipalAuth: /hbbapi/getPrincipalAuth
+  eduteach:
+    sync:
+      userinfo: /sync/userinfo
+  act:
+    common:
+      getActivityVisitors: /act/common/getActivityVisitors
+  edulesson:
+    product:
+      getChannels: /product/getChannels
+      getChannelCatalogs: /product/getChannelCatalogs
+      getResources: /product/getResources
+      getResourceDetail: /product/getResourceDetail
+      getTopicList: /product/getTopicList
+      collectResource: /product/collectResource
+      userComment: /product/userComment
+      userThumbUp: /product/userThumbUp
+      getCommentList: /product/getCommentList
+      changeDredgeCount: /product/changeDredgeCount
+      channelComment: /product/channelComment
+      getChannelCommentList: /product/getChannelCommentList
+      getProductLables: /product/getProductLables
+      getResourceDetailList: /product/getResourceDetailList
+      getChannelAndCatalogs: /product/getChannelAndCatalogs
+      getCollectResourceList: /product/getCollectResourceList
+    user:
+      collectResource: /user/collectResource
+      userThumbUp: /user/userThumbUp
+      userResourceList: /user/userResourceList
+      isCpCheck: /user/isCpCheck
+      resourcePutoff: /user/resourcePutoff
+      userComment: /user/userComment
+    resource:
+      uploadFile: /resource/uploadFile
+      callBack: /resource/callBack
+      resourceList: /resource/resourceList
+      resourceCommentList: /resource/resourceCommentList
+      thirdResourceList: /resource/thirdResourceList
+      resourceInfo: /resource/resourceInfo
+      getHotResource: /resource/getHotResource
+  provuser:
+    user:
+      querySimpleUser: /open/user/querySimpleUser/i
+      queryPhoneUserSimple: /open/user/queryPhoneUserSimple/i
+      queryUser: /open/user/queryUser/i
+      queryUserRoles: /open/user/queryUserRoles/i
+      queryTeacherUser: /open/user/queryTeacherUser/i
+      queryParentUser: /open/user/queryParentUser/i
+      queryStudentUser: /open/user/queryStudentUser/i
+      updateSimpleUser: /open/user/updateSimpleUser/i
+      updateUserPwd: /open/user/updateUserPwd/i
+      updateUserLable: /open/user/updateUserLable/i
+      queryUserLable: /open/user/queryUserLable/i
+      queryParentList: /open/user/queryParentList/i
+      queryChildList: /open/user/queryChildList/i
+      resetChildPwd: /open/user/resetChildPwd/i
+      getRolePhone: /open/user/getRolePhone/i
+      otherUnbind: /open/user/otherUnbind/i
+      otherBindList: /open/user/otherBindList/i
+    org: 
+      querySchoolList: /open/org/querySchoolList/i
+      querySchool: /open/org/querySchool/i
+      querySchoolGradeList: /open/org/querySchoolGradeList/i
+      querySchoolTeacherList: /open/org/querySchoolTeacherList/i
+      queryGrade: /open/org/queryGrade/i
+      queryUserGradeList: /open/org/queryUserGradeList/i
+      queryGradeClassList: /open/org/queryGradeClassList/i
+      userSchoolRoleList: /open/org/userSchoolRoleList/i
+      queryUserClassList: /open/org/queryUserClassList/i
+      queryClassUserList: /open/org/queryClassUserList/i
+      queryGradeTeacherList: /open/org/queryGradeTeacherList/i
+      queryUserGradeRoleList: /open/org/queryUserGradeRoleList/i
+      userAddClassRelation: /open/org/userAddClassRelation/i
+    friend:
+      queryUserFriendGroupList: /open/friend/queryUserFriendGroupList/i
+      addUserFriendGroup: /open/friend/addUserFriendGroup/i
+      updateUserFriendGroupOrder: /open/friend/updateUserFriendGroupOrder/i
+      updateUserFriendGroup: /open/friend/updateUserFriendGroup/i
+      deleteUserFriendGroup: /open/friend/deleteUserFriendGroup/i
+      queryUserFriendList: /open/friend/queryUserFriendList/i
+      userAddFriend: /open/friend/userAddFriend/i
+      userFriendRemove: /open/friend/userFriendRemove/i
+      updateUserFriendRemark: /open/friend/updateUserFriendRemark/i
+      userDeleteFriends: /open/friend/userDeleteFriends/i
+    base:
+      queryProvinceList: /open/base/queryProvinceList/i
+      queryCityList: /open/base/queryCityList/i
+      queryDistrictList: /open/base/queryDistrictList/i
+      queryGradeList: /open/base/queryGradeList/i
+  prousersync:
+    agentSync: /agent/base/syn
+    agentQuery: /agent/base/query
+    schoolSync: /school/base/syn
+    schoolQuery: /school/base/query
+    gradeSync: /grade/base/syn
+    gradeQuery: /grade/base/query
+    classSync: /class/base/syn
+    classQuery: /class/base/query
+    personSync: /person/base/syn
+    personOper: /person/base/operation
+    personClass: /person/base/user_class
+    personGrade: /person/base/user_grade
+    personSchool: /person/base/user_school
+    personQuery: /person/base/query
+  marksxuserserver:
+    accountLogin: /open/user/accountLogin/i
+    register: /open/user/register/i
+    sendMessage: /open/common/sendMessage/i
+    forgetPwd: /open/user/forgetPwd/i
+    updatePwd: /open/user/updatePwd/i
+    resetPwd: /open/user/resetPwd/i
+    updateUserInfo: /open/user/updateUserInfo/i
+    queryUserPhone: /open/user/queryUserPhone/i
+    addSchoolBatch: /open/org/addSchoolBatch/i
+    addHoppyClassBatch: /open/org/addHoppyClassBatch/i
+    addClassBatch: /open/org/addClassBatch/i
+    addTeacherToClass: /open/org/addTeacherToClass/i
+    addStudentAndParentToClass: /open/org/addStudentAndParentToClass/i
+    addStudentParentInfo: /open/org/addStudentParentInfo/i
+    inviteTeacherToClass: /open/org/inviteTeacherToClass/i
+    inviteStudentAndParentToClass: /open/org/inviteStudentAndParentToClass/i
+    updateClassInfo: /open/org/updateClassInfo/i
+    updateTeacherInfo: /open/org/updateTeacherInfo/i
+    updateStudentInfo: /open/org/updateStudentInfo/i
+    deleteClassUser: /open/org/deleteClassUser/i
+    addTeacherBatch: /open/org/addTeacherBatch/i
+    addStudentParentBatch: /open/org/addStudentParentBatch/i
+    querySchoolInfo: /open/org/querySchoolInfo/i
+    querySchoolClassList: /open/org/querySchoolClassList/i
+    queryClassTeacherList: /open/org/queryClassTeacherList/i
+    queryClassStudentList: /open/org/queryClassStudentList/i
+    queryStudentParent: /open/org/queryStudentParent/i
+    updateStudentParentClassBatch: /open/org/updateStudentParentClassBatch/i
+    eduproduct: /open/jump/eduproduct/i
+############################################################################################
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.111.97.146:9102/eureka/
+spring:
+  profiles: development
+datasource:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: educloud
+  password: 0auBU1d1
+  url: jdbc:oracle:thin:@112.35.7.170:9120:educloud
+datasource-act:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: eduact
+  password: R9nBppJB
+  url: jdbc:oracle:thin:@112.35.7.170:9120:educloud
+datasource-xxt:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: eduxxt
+  password: R9nBppJB
+  url: jdbc:oracle:thin:@112.35.7.170:9120:educloud
+redis:
+  user:
+    host: 127.0.0.1
+    port: 6379
+  res:
+    host: 10.102.56.224
+    port: 9112
+  other:
+    host: 127.0.0.1
+    port: 6379
+#memcached.user.servers: '10.102.56.224:11211'
+#memcached.business.servers: '10.102.56.224:11211'
+memcached.user.servers: '127.0.0.1:11211'
+memcached.business.servers: '127.0.0.1:11211'
+base.manage.extranet.url: http://112.33.8.104:9120/dev-edumanage
+base.manage.intranet.url: http://10.102.56.193:9120/dev-edumanage
+solr.serverUrl: http://112.33.8.104:9117/solr
+#solr.cloud.zkHost: 192.168.196.131:2181,192.168.196.132:2181,192.168.196.133:2181
+mongodb.serverUrl: mongodb://educloud:UrOrynGK@112.33.2.49:9300/educloudapi
+#mongodb.serverUrl: mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test
+spring.activemq.broker-url: tcp://localhost:8161
+spring.activemq.tempUsage: 5000mb
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.102.56.227:9102/eureka/
+spring:
+  profiles: dev-server
+datasource:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: educloud
+  password: R9nBppJB
+  url: jdbc:oracle:thin:@10.102.56.223:1521:educloud
+datasource-act:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: eduact
+  password: R9nBppJB
+  url: jdbc:oracle:thin:@112.33.2.95:9992:educloud
+redis:
+  user:
+    host: 10.102.56.224
+    port: 9111
+  res:
+    host: 10.102.56.224
+    port: 9112
+  other:
+    host: 10.102.56.224
+    port: 9113
+memcached.user.servers: '10.102.56.224:11211'
+memcached.business.servers: '10.102.56.224:11211'
+base.manage.extranet.url: http://112.33.8.104:9120/dev-edumanage
+base.manage.intranet.url: http://10.102.56.193:9120/dev-edumanage
+solr.serverUrl: http://10.102.56.193:9117/solr/
+#solr.cloud.zkHost: 192.168.196.131:2181,192.168.196.132:2181,192.168.196.133:2181
+mongodb.serverUrl: mongodb://educloud:UrOrynGK@112.33.2.49:9300/educloudapi
+#mongodb.serverUrl: mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.111.96.11:9102/eureka/
+spring:
+  profiles: test-server
+datasource:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: educloud
+  password: 0auBU1d1
+  url: jdbc:oracle:thin:@10.111.96.18:1521:educloud
+  #jdbc:oracle:thin:@10.111.96.18:9012:educloud
+datasource-act:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: eduact
+  password: R9nBppJB
+  url: jdbc:oracle:thin:@10.111.96.18:1521:educloud
+datasource-xxt:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: eduxxt
+  password: R9nBppJB
+  url: jdbc:oracle:thin:@10.111.96.18:1521:educloud
+redis:
+  user:
+    host: 10.111.96.16
+    port: 9101
+  res:
+    host: 10.111.96.16
+    port: 9101
+  other:
+    host: 10.111.96.16
+    port: 9101
+  cluster:
+    host: 10.111.96.16
+    port: 9000
+    nodes: '10.111.96.16:9000,10.111.96.16:9001,10.111.96.16:9002,10.111.96.16:9003,10.111.96.16:9004,10.111.96.16:9005'
+    passwd: '1q2w3e4r.!'
+
+memcached.user.servers: '10.111.96.16:9102'
+memcached.business.servers: '10.111.96.16:9102'
+base.manage.extranet.url: https://edu.10086.cn/test-edumanage
+base.manage.intranet.url: http://10.111.96.4:9120/test-edumanage
+#solr.serverUrl: http://112.35.7.164:9005/solr/
+solr.serverUrl: http://10.111.96.4:9107/solr/
+#solr.cloud.zkHost: 192.168.196.131:2181,192.168.196.132:2181,192.168.196.133:2181
+mongodb.serverUrl: mongodb://edureport:8ZpivkC8@10.111.96.17:9101/educloudapi
+#mongodb.serverUrl: mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test
+spring.activemq.broker-url: tcp://10.111.96.8:61616
+
+sftp.username: statistic
+sftp.password: W.vIh08k
+sftp.host: 192.168.100.206
+sftp.port: 22
+
+#spring.zipkin.baseUrl: http://10.111.96.5:9411
+
+endpoints.enabled: false
+endpoints.info.enabled: true
+endpoints.health.enabled: true
+
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.102.56.136:9037/eureka/
+spring:
+  profiles: combined-server
+datasource:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: educloud
+  password: R9nBppJB
+  url: jdbc:oracle:thin:@10.102.56.102:1521:educloud
+
+redis:
+  sentinel:
+    enable: true
+  user:
+    sentinels: '10.102.56.113:9220'
+    masterName: 'sentinel0'
+  res:
+    sentinels: '10.102.56.113:9221'
+    masterName: 'sentinel1'
+
+memcached.user.servers: '10.102.56.113:9100'
+memcached.business.servers: '10.102.56.113:9100'
+
+solr.serverUrl: http://10.102.56.9:8890/solr/
+#solr.cloud.zkHost: 192.168.196.131:2181,192.168.196.132:2181,192.168.196.133:2181
+mongodb.serverUrl: mongodb://10.102.56.113:9101/educloudapi
+#mongodb.serverUrl: mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test
+
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.111.24.223:9101/eureka/
+spring:
+  profiles: online-server
+datasource:
+  driver-class-name: oracle.jdbc.OracleDriver
+  username: educloud
+  password: 0auBU1d1
+  url: jdbc:oracle:thin:@(description=(address_list= (address=(host=192.168.1.74) (protocol=tcp)(port=1521))(address=(host=192.168.1.75)(protocol=tcp) (port=1521))(address=(host=192.168.1.76)(protocol=tcp) (port=1521)) (load_balance=yes)(failover=yes))(connect_data=(service_name= educloud)))
+  #jdbc:oracle:thin:@10.111.96.18:9012:educloud
+redis:
+  user:
+    host: 10.111.24.144
+    port: 9000
+  res:
+    host: 10.111.24.144
+    port: 9000
+  other:
+    host: 10.111.24.144
+    port: 9000
+memcached.user.servers: '10.111.24.142:9000'
+memcached.business.servers: '10.111.24.142:9000'
+base.manage.extranet.url: https://edu.10086.cn/basemanage
+base.manage.intranet.url: http://10.111.25.36:9100/basemanage
+#solr.serverUrl: http://112.35.7.164:9005/solr/
+solr.serverUrl: http://10.111.24.113:9107/solr/
+#solr.cloud.zkHost: 192.168.196.131:2181,192.168.196.132:2181,192.168.196.133:2181
+mongodb.serverUrl: mongodb://educloud:h3m]6OVi@10.111.24.231:9000/educloudapi
+#mongodb.serverUrl: mongodb://user:secret@mongo1.example.com:12345,mongo2.example.com:23456/test
+sftp.username: statistic
+sftp.password: W.vIh08k
+sftp.host: 192.168.100.206
+sftp.port: 22
+
