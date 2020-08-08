@@ -8,6 +8,12 @@ spring:
     loadbalancer:
       retry:
         enabled: true # 开启Spring Cloud的重试功能
+# 开启所有端点management:
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
  #日志级别
 logging:
   level:
@@ -33,7 +39,7 @@ zuul:
     #    lk-user-server: # 这里是路由id，随意写
     #      path: /user-server/** # 这里是映射路径
     #      service-id: lk-user-server # 指定服务名称
-    lk-user-server: /user/** # 这里是映射路径
+    lk-user-server: /user-server/** # 这里是映射路径
 # ignored-services:
 #   - upload-service # 忽略upload-service服务
 #   add-host-header: true #携带请求本身的head头信息
